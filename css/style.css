@@ -407,3 +407,39 @@ p{
 #service-3:hover{
     background-color: rebeccapurple;
 }
+
+/* Animations section */
+
+.field{
+    width:600px;
+    height: 300px;
+    border-top-right-radius: 50px;
+    background-color: springgreen;
+}
+.ball{
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    background-color: red;
+    animation: sliding 5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+
+@keyframes sliding {
+    0%{
+        top: 0px;
+        left:0px;
+        background-color: lawngreen;
+    }
+    50%{
+        top: 250px;
+        left:250px;
+        background-color: rgb(238, 8, 8);
+    }
+    100%{
+        top: 0px;
+        left:550px;
+        background-color: lightsalmon;
+    }
+}
