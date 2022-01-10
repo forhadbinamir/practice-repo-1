@@ -377,7 +377,7 @@ p{
    
     padding-top: 180px;     
     display: block;
-    transition:1s ease-in-out
+    transition:3s infinite;
 }
 .service-item:hover h1{
     opacity: 0;
