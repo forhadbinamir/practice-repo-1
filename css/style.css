@@ -1,0 +1,409 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+    margin:0;
+    padding:0;
+}
+body{
+    /* background-color: rgb(243, 226, 243); */
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    line-height: 25px;
+}
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.right-side{
+    flex:1;
+    display:flex;
+    align-items: center;
+}
+.left-side{
+    flex:1;
+    display:flex;
+    align-items: center;
+}
+.right-side img{
+    width:80%;
+   
+}
+
+.link-button{
+    font-size: 20px;
+    font-weight: 700;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;   
+    padding: 10px 20px;
+    background-color: crimson;
+    border: 1px solid crimson;
+    display: inline-block;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.link-button:hover{
+    color:#000;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: .4s linear;
+}
+
+/* gallery section */
+
+.section-title{
+    text-align: center;
+}
+.section-title h1{
+    color: #000; 
+    border-left: 3px solid crimson;
+    border-right: 3px solid crimson;
+    display: inline-block;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 15px;
+    font-size: 40px;
+    line-height: .8;
+}
+.banner-title2{
+    position: relative;
+    color: transparent;
+}
+.banner-title2::before{
+    content: "CSS Animations Website";
+    position: absolute;
+    color:crimson;
+    animation: typing 3s linear 2s infinite;
+}
+@keyframes typing {
+    0%{
+        content: "C|";
+    }
+    4%{
+        content: 'CS|';
+    }
+    8%{
+        content: 'CSS|';
+    }
+    12%{
+        content: 'CSS |';
+    }
+    16%{
+        content: 'CSS A|';
+    }
+    20%{
+        content: 'CSS An|';
+    }
+    24%{
+        content: 'CSS Ani|';
+    }
+    28%{
+        content: 'CSS Anim|';
+    }
+    32%{
+        content: 'CSS Anima,|';
+    }
+    36%{
+        content: 'CSS Animat|';
+    }
+    40%{
+        content: 'CSS Animati|';
+    }
+    44%{
+        content: 'CSS Animatio|';
+    }
+    48%{
+        content: 'CSS Animation|';
+    }
+    52%{
+        content: 'CSS Animations|';
+    }
+    56%{
+        content: 'CSS Animations |';
+    }
+    60%{
+        content: 'CSS Animations W|';
+    }
+    64%{
+        content: 'CSS Animations We|';
+    }
+    68%{
+        content: 'CSS Animations Web|';
+    }
+    72%{
+        content: 'CSS Animations Webs|';
+    }76%{
+        content: 'CSS Animations Websi|';
+    }
+    80%{
+        content: 'CSS Animations Websit|';
+    }
+    84%{
+        content: 'CSS Animations Website|';
+    }
+    85%,
+    86%{
+        content: "CSS Animations Website|";
+    }
+    87%{
+        content: 'CSS Animations Websit|';
+    }
+    88%{
+        content: 'CSS Animations Websi|';
+    }
+    89%{
+        content: "CSS Animations Websi|";
+    }
+    90%{
+        content: 'CSS Animations Webs|';
+    }
+    91%{
+        content: 'CSS Animations Web|';
+    }
+    92%{
+        content: 'CSS Animations We|';
+    }
+    93%{
+        content: 'CSS Animations W|';
+    }
+    94%{
+        content: 'CSS Animations |';
+    }
+    95%{
+        content: 'CSS Animations|';
+    }
+    96%{
+        content: 'CSS Animation|';
+    }
+    97%{
+        content: 'CSS Animatio|';
+    }
+    98%{
+        content: 'CSS Animati|';
+    }
+    99%{
+        content: 'CSS Animat|';
+    }
+    100%{
+        content: '|';
+    }
+    
+    /* 88%{
+        content: 'Transform, Transition, A|';
+    }
+    92%{
+        content: 'Transform, Transition, An|';
+    }
+    96%{
+        content: 'Transform, Transition, Ani|';
+    }
+    100%{
+        content: 'Transform, Transition, Anim|';
+    }
+    104%{
+        content: 'Transform, Transition, Anima|';
+    }
+    108%{
+        content: 'Transform, Transition, Animat|';
+    }
+    112%{
+        content: 'Transform, Transition, Animati|';
+    }
+    116%{
+        content: 'Transform, Transition, Animatio|';
+    }
+    120%{
+        content: 'Transform, Transition, Animation|';
+    } */
+
+}
+
+.photo{
+    width: 280px;
+    height: 280px;
+    position:relative;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.border{
+    background-color: #fff;
+    position: absolute;
+    transition: .7s ease-in-out;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.border.top, .border.bottom{
+    height: 4px;
+    width: 270px;
+}
+.border.left, .border.right{
+    width: 4px;
+    height: 270px;
+}
+.border.top{
+    top: 5px;
+    right: 100%;
+}
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+.border.left{
+    left: 5px;
+    top: 100%;
+}
+.border.right{
+    right: 5px;
+    bottom: 100%;
+}
+.photo:hover .border.top{
+    right: 5px;
+}
+.photo:hover .border.bottom{
+    left: 5px;
+}
+.photo:hover .border.left{
+    top: 5px;
+}
+.photo:hover .border.right{
+    bottom: 5px;
+}
+
+.photo-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-left: 30px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(400px);
+    transition: .3, ease-in-out;
+}
+.photo:hover .photo-content{
+    transform: translateY(200px);
+}
+
+.photo::before{
+    content: " ";
+    height: 100%;
+    width:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.411);
+    opacity: 0;
+    top:0;
+    left: 0;
+    transition: .3s linear;
+}
+.photo:hover::before{
+    opacity: 3;
+}
+
+/* dream section */
+
+.dream-box{
+    margin: 150px 0;
+    display: flex;
+}
+
+.dream-image{
+    width: 50%;
+}
+.dream-content{
+    width: 50%;
+}
+
+.dream-image img{
+    width: 80%;
+}
+.dream-content h1{
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-image: linear-gradient(tomato, salmon);
+    border-image-slice: 1;
+}
+
+
+/* service-section */
+
+.service-item{
+    width:25%;
+    background-color: burlywood;
+    padding: 20px 20px;
+    border-radius: 25px;
+    position:relative;
+}
+.service-item img{
+    width: 50%;
+    height: 35%;
+    
+}
+/* .service-item:hover{
+    cursor: pointer;
+    background-color: black;
+    transform: rotateY(180deg);
+    transform-origin: left;
+    transition-duration: 5s;
+} */
+.service-item::before{
+    content: ' This is Forhad Hossain Stripe Paymet Card';
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+
+}
+.service-item:hover::before{
+    opacity: 1;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+   
+    padding-top: 180px;     
+    display: block;
+    transition:1s ease-in-out
+}
+.service-item:hover h1{
+    opacity: 0;
+}
+.service-item:hover p{
+    opacity: 0;
+}
+.service-item:hover{
+    /* background-color: rebeccapurple; */
+
+}
+#service-1{
+    background-color: rgb(250, 224, 206);
+}
+#service-2{
+    background-color: sandybrown;
+}
+#service-3{
+    background-color:salmon;
+}
+#service-1:hover{
+    background-color: rebeccapurple;
+} 
+#service-2:hover{
+    background-color: rebeccapurple;
+} 
+#service-3:hover{
+    background-color: rebeccapurple;
+}
